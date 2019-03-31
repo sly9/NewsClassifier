@@ -2,7 +2,8 @@ extends layout
 
 block content
     h1= title
-    p Crawled json:
+    p Abandoned #{abandoned} articles:
+    p Inserted:
     ul
-        each val in json['T1348647853363']
-            li= val.title
+    each val in articles
+        li= val.title
